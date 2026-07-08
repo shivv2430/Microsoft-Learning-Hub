@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources - Microsoft Learning Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Preloader -->
+  <div id="preloader">
+    <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="5" y="5" width="40" height="40" fill="#f25022"/>
+      <rect x="55" y="5" width="40" height="40" fill="#7fba00"/>
+      <rect x="5" y="55" width="40" height="40" fill="#00a4ef"/>
+      <rect x="55" y="55" width="40" height="40" fill="#ffb900"/>
+    </svg>
+    <p style="margin-top: 15px; font-weight: 500;">Loading Resources...</p>
+  </div>
+
+  <nav>
+    <a href="index.html" class="logo-container">
+      <svg width="30" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="5" width="40" height="40" fill="#f25022"/>
+        <rect x="55" y="5" width="40" height="40" fill="#7fba00"/>
+        <rect x="5" y="55" width="40" height="40" fill="#00a4ef"/>
+        <rect x="55" y="55" width="40" height="40" fill="#ffb900"/>
+      </svg>
+      <strong>Microsoft Learning Hub</strong>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="resources.html" class="active">Resources</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search Resources... (e.g. Copilot, Azure)">
+    </div>
+
+    <div class="category-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="students">Students</button>
+      <button class="filter-btn" data-filter="developer">Developer</button>
+      <button class="filter-btn" data-filter="ai">AI</button>
+      <button class="filter-btn" data-filter="data">Data</button>
+      <button class="filter-btn" data-filter="lowcode">Low Code</button>
+      <button class="filter-btn" data-filter="startup">Startup</button>
+    </div>
+
+    <div class="grid">
+      
+      <!-- Developer Card -->
+      <div class="card" data-category="developer">
+        <div class="card-header">
+          <div class="card-icon">💻</div>
+          <h3 class="card-title">Developer Interests and Skills</h3>
+        </div>
+        <div class="card-desc">Developer Tools & Resources</div>
+        <ul class="card-links">
+          <li>✔ <a href="https://azure.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">Azure Cloud Platform →</a></li>
+          <li>✔ <a href="https://developer.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">Microsoft Developer Center →</a></li>
+          <li>✔ <a href="https://azure.microsoft.com/free?wt.mc_id=studentamb_551092" target="_blank">Azure Free Account →</a></li>
+          <li>✔ <a href="https://dotnet.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">.NET Platform →</a></li>
+          <li>✔ <a href="https://azure.microsoft.com/free/students?wt.mc_id=studentamb_551092" target="_blank">Azure for Students →</a></li>
+          <li>✔ <a href="https://learn.microsoft.com/developer?wt.mc_id=studentamb_551092" target="_blank">Microsoft Learn for Developers →</a></li>
+          <li>✔ <a href="https://code.visualstudio.com?wt.mc_id=studentamb_551092" target="_blank">Visual Studio Code →</a></li>
+          <li>✔ <a href="https://microsoft.com/microsoft-cloud/blog?wt.mc_id=studentamb_551092" target="_blank">Microsoft Cloud Blog →</a></li>
+          <li>✔ <a href="https://devblogs.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">Microsoft Dev Blogs →</a></li>
+        </ul>
+      </div>
+
+      <!-- Startups Card -->
+      <div class="card" data-category="startup">
+        <div class="card-header">
+          <div class="card-icon">🚀</div>
+          <h3 class="card-title">Startups Interests and Skills</h3>
+        </div>
+        <div class="card-desc">For Entrepreneurs</div>
+        <ul class="card-links">
+          <li>✔ <a href="https://microsoft.com/startups?wt.mc_id=studentamb_551092" target="_blank">Microsoft for Startups →</a></li>
+          <li>✔ <a href="https://learn.microsoft.com/startups?wt.mc_id=studentamb_551092" target="_blank">Learn for Startups →</a></li>
+          <li>✔ <a href="https://microsoft.com/startups/ai?wt.mc_id=studentamb_551092" target="_blank">Startups AI Resources →</a></li>
+          <li>✔ <a href="https://learn.microsoft.com/training/topics/startups?wt.mc_id=studentamb_551092" target="_blank">Startup Training Topics →</a></li>
+          <li>✔ <a href="https://microsoft.com/startups/blog?wt.mc_id=studentamb_551092" target="_blank">Microsoft Startups Blog →</a></li>
+          <li>✔ <a href="https://imaginecup.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">Imagine Cup →</a></li>
+        </ul>
+      </div>
+
+      <!-- Copilot Card -->
+      <div class="card" data-category="ai">
+        <div class="card-header">
+          <div class="card-icon">🤖</div>
+          <h3 class="card-title">Copilot Interests and Skills</h3>
+        </div>
+        <div class="card-desc">AI Companion</div>
+        <ul class="card-links">
+          <li>✔ <a href="https://copilot.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">Microsoft Copilot →</a></li>
+          <li>✔ <a href="https://microsoft.com/microsoft-365/copilot-learning-center?wt.mc_id=studentamb_551092" target="_blank">Copilot Learning Center →</a></li>
+          <li>✔ <a href="https://microsoft.com/microsoft-copilot/for-individuals?wt.mc_id=studentamb_551092" target="_blank">Copilot for Individuals →</a></li>
+          <li>✔ <a href="https://learn.microsoft.com/copilot?wt.mc_id=studentamb_551092" target="_blank">Learn Microsoft Copilot →</a></li>
+          <li>✔ <a href="https://microsoft.com/microsoft-365-copilot?wt.mc_id=studentamb_551092" target="_blank">Microsoft 365 Copilot →</a></li>
+        </ul>
+      </div>
+
+      <!-- Data Science Card -->
+      <div class="card" data-category="data">
+        <div class="card-header">
+          <div class="card-icon">📊</div>
+          <h3 class="card-title">Data Science Interests and Skills</h3>
+        </div>
+        <div class="card-desc">Data Analytics</div>
+        <ul class="card-links">
+          <li>✔ <a href="https://microsoft.com/microsoft-fabric?wt.mc_id=studentamb_551092" target="_blank">Microsoft Fabric →</a></li>
+          <li>✔ <a href="https://blog.fabric.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">Microsoft Fabric Blog →</a></li>
+          <li>✔ <a href="https://community.fabric.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">Fabric Community →</a></li>
+          <li>✔ <a href="https://learn.microsoft.com/fabric?wt.mc_id=studentamb_551092" target="_blank">Learn Microsoft Fabric →</a></li>
+        </ul>
+      </div>
+
+      <!-- Low Code Card -->
+      <div class="card" data-category="lowcode">
+        <div class="card-header">
+          <div class="card-icon">⚡</div>
+          <h3 class="card-title">Low Code Interests and Skills</h3>
+        </div>
+        <div class="card-desc">Low Code Development</div>
+        <ul class="card-links">
+          <li>✔ <a href="https://microsoft.com/power-platform?wt.mc_id=studentamb_551092" target="_blank">Power Platform →</a></li>
+          <li>✔ <a href="https://learn.microsoft.com/power-automate?wt.mc_id=studentamb_551092" target="_blank">Learn Power Automate →</a></li>
+          <li>✔ <a href="https://community.powerplatform.com?wt.mc_id=studentamb_551092" target="_blank">Power Platform Community →</a></li>
+          <li>✔ <a href="https://learn.microsoft.com/power-bi?wt.mc_id=studentamb_551092" target="_blank">Learn Power BI →</a></li>
+          <li>✔ <a href="https://powerbi.microsoft.com/blog?wt.mc_id=studentamb_551092" target="_blank">Power BI Blog →</a></li>
+          <li>✔ <a href="https://learn.microsoft.com/power-apps?wt.mc_id=studentamb_551092" target="_blank">Learn Power Apps →</a></li>
+          <li>✔ <a href="https://learn.microsoft.com/power-platform?wt.mc_id=studentamb_551092" target="_blank">Learn Power Platform →</a></li>
+          <li>✔ <a href="https://learn.microsoft.com/power-pages?wt.mc_id=studentamb_551092" target="_blank">Learn Power Pages →</a></li>
+        </ul>
+      </div>
+
+      <!-- General Skilling Card -->
+      <div class="card" data-category="students">
+        <div class="card-header">
+          <div class="card-icon">🎓</div>
+          <h3 class="card-title">General Skilling and Professional Interests</h3>
+        </div>
+        <div class="card-desc">Events & Communities</div>
+        <ul class="card-links">
+          <li>✔ <a href="https://events.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">Microsoft Events →</a></li>
+          <li>✔ <a href="https://reactor.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">Microsoft Reactor →</a></li>
+          <li>✔ <a href="https://learn.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">Microsoft Learn →</a></li>
+          <li>✔ <a href="https://studentambassadors.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">Student Ambassadors →</a></li>
+          <li>✔ <a href="https://microsoft.com/insidetrack?wt.mc_id=studentamb_551092" target="_blank">Inside Track →</a></li>
+          <li>✔ <a href="https://techcommunity.microsoft.com?wt.mc_id=studentamb_551092" target="_blank">Tech Community →</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <button id="backToTop" aria-label="Back to Top">↑</button>
+
+  <footer>
+    <p>Created by Shivani Pal</p>
+    <div class="social-links">
+      <a href="https://github.com/shivv2430">GitHub</a>
+      <a href="https://www.linkedin.com/in/shivv2430/">LinkedIn</a>
+      <a href="https://www.instagram.com/shivani.learns/">Instagram</a>
+      <a href="https://www.youtube.com/@Shivani.learns">YouTube</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

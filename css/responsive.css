@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .category-filters {
+    gap: 0.5rem;
+  }
+  .filter-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  #backToTop {
+    bottom: 20px;
+    right: 20px;
+  }
+}

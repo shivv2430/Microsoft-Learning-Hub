@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft Learning Hub | Official Resources</title>
+  <meta name="description" content="Learn Microsoft technologies from official resources, all in one place. Perfect for Students, Developers, and Beginners.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="5" y="5" width="40" height="40" fill="#f25022"/>
+      <rect x="55" y="5" width="40" height="40" fill="#7fba00"/>
+      <rect x="5" y="55" width="40" height="40" fill="#00a4ef"/>
+      <rect x="55" y="55" width="40" height="40" fill="#ffb900"/>
+    </svg>
+    <p style="margin-top: 15px; font-weight: 500;">Loading Microsoft Learning Hub...</p>
+  </div>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html" class="logo-container">
+      <svg width="30" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="5" width="40" height="40" fill="#f25022"/>
+        <rect x="55" y="5" width="40" height="40" fill="#7fba00"/>
+        <rect x="5" y="55" width="40" height="40" fill="#00a4ef"/>
+        <rect x="55" y="55" width="40" height="40" fill="#ffb900"/>
+      </svg>
+      <strong>Microsoft Learning Hub</strong>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="hero">
+      <h1>Microsoft Learning Hub</h1>
+      <p>Official Microsoft learning resources for Students, Developers, and Beginners.</p>
+      <div style="margin-bottom: 2rem;">
+        <a href="resources.html" class="btn">Explore Resources</a>
+      </div>
+      
+      <div class="search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search Resources..." onkeypress="if(event.key === 'Enter') window.location.href='resources.html'">
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Popular Categories</h2>
+      <div class="category-filters" style="margin-bottom: 2rem;">
+        <a href="resources.html" class="filter-btn">Azure</a>
+        <a href="resources.html" class="filter-btn">GitHub</a>
+        <a href="resources.html" class="filter-btn">Microsoft Learn</a>
+        <a href="resources.html" class="filter-btn">Copilot</a>
+        <a href="resources.html" class="filter-btn">Fabric</a>
+        <a href="resources.html" class="filter-btn">Power Platform</a>
+        <a href="resources.html" class="filter-btn">Developer</a>
+        <a href="resources.html" class="filter-btn">Startups</a>
+      </div>
+    </section>
+
+    <section style="margin: 4rem 0;">
+      <h2 class="section-title">Why Microsoft Learning Hub?</h2>
+      <ul class="features-list">
+        <li>45+ Official Resources</li>
+        <li>☁ 7 Categories</li>
+        <li>🎓 Student Friendly</li>
+        <li>🌍 100% Free Learning</li>
+        <li>🚀 Regularly Updated</li>
+      </ul>
+
+      <div style="margin: 4rem auto; max-width: 600px; text-align: center;">
+        <blockquote style="
+          font-size: 1.5rem; 
+          font-weight: 500; 
+          font-style: italic; 
+          color: var(--text-color); 
+          background: linear-gradient(135deg, rgba(0, 120, 212, 0.1), rgba(0, 188, 242, 0.1));
+          border-left: 5px solid var(--primary-color); 
+          padding: 2rem; 
+          border-radius: 10px; 
+          box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        ">
+          "The best way to learn technology is by building with it."
+          <footer style="margin-top: 1rem; font-size: 1.1rem; font-style: normal; font-weight: bold; color: var(--primary-color);">
+            — Microsoft Learning Hub
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section style="margin: 4rem 0;">
+      <h2 class="section-title">Latest Featured Resource</h2>
+      <div class="card" style="max-width: 400px; margin: 0 auto; text-align: center;">
+        <div class="card-icon">☁️</div>
+        <h3 class="card-title">Azure for Students</h3>
+        <p class="card-desc">Get Free Azure Credits</p>
+        <a href="https://azure.microsoft.com/free/students?wt.mc_id=studentamb_551092" target="_blank" class="btn">Visit</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to Top">↑</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created by Shivani Pal</p>
+    <div class="social-links">
+      <a href="https://github.com/shivv2430">GitHub</a>
+      <a href="https://www.linkedin.com/in/shivv2430/">LinkedIn</a>
+      <a href="https://www.instagram.com/shivani.learns/">Instagram</a>
+      <a href="https://www.youtube.com/@Shivani.learns">YouTube</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

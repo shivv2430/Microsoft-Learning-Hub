@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Microsoft Learning Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="5" y="5" width="40" height="40" fill="#f25022"/>
+      <rect x="55" y="5" width="40" height="40" fill="#7fba00"/>
+      <rect x="5" y="55" width="40" height="40" fill="#00a4ef"/>
+      <rect x="55" y="55" width="40" height="40" fill="#ffb900"/>
+    </svg>
+    <p style="margin-top: 15px; font-weight: 500;">Loading Contact...</p>
+  </div>
+
+  <nav>
+    <a href="index.html" class="logo-container">
+      <svg width="30" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="5" width="40" height="40" fill="#f25022"/>
+        <rect x="55" y="5" width="40" height="40" fill="#7fba00"/>
+        <rect x="5" y="55" width="40" height="40" fill="#00a4ef"/>
+        <rect x="55" y="55" width="40" height="40" fill="#ffb900"/>
+      </svg>
+      <strong>Microsoft Learning Hub</strong>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </div>
+  </nav>
+
+  <main style="max-width: 600px; margin: 0 auto; text-align: center;">
+    <section style="margin: 4rem 0;">
+      <h1 class="section-title">Get in Touch</h1>
+      <p style="margin-bottom: 2rem;">Have suggestions for more resources or want to contribute? Connect with me on social media!</p>
+      
+      <div class="card" style="text-align: left; margin: 0 auto;">
+        <form style="display: flex; flex-direction: column; gap: 1rem;" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+          <div>
+            <label style="font-weight: 600; display: block; margin-bottom: 0.5rem;">Name</label>
+            <input type="text" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--bg-color); color: var(--text-color);">
+          </div>
+          <div>
+            <label style="font-weight: 600; display: block; margin-bottom: 0.5rem;">Email</label>
+            <input type="email" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--bg-color); color: var(--text-color);">
+          </div>
+          <div>
+            <label style="font-weight: 600; display: block; margin-bottom: 0.5rem;">Message</label>
+            <textarea required rows="4" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--bg-color); color: var(--text-color);"></textarea>
+          </div>
+          <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" aria-label="Back to Top">↑</button>
+
+  <footer>
+    <p>Created by Shivani Pal</p>
+    <div class="social-links">
+      <a href="https://github.com/shivv2430">GitHub</a>
+      <a href="https://www.linkedin.com/in/shivv2430/">LinkedIn</a>
+      <a href="https://www.instagram.com/shivani.learns/">Instagram</a>
+      <a href="https://www.youtube.com/@Shivani.learns">YouTube</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

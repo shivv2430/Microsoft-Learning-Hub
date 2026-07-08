@@ -1,7 +1,13 @@
-# Microsoft-Learning-Hub
+# Microsoft Learning Hub
 Learn Microsoft technologies from official resources, all in one place.
 
-# Folder Structure:
+## Features
+- Official Resources mapped by Categories (Azure, GitHub, AI, Data, Low Code).
+- Real-time Search and Filtering.
+- Modern Glassmorphism Design with Dark Mode.
+- Fully Responsive (Mobile Friendly).
+
+## Folder Structure:
 Microsoft-Learning-Hub/
 │
 ├── index.html
